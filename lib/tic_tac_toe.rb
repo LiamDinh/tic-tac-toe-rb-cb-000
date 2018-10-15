@@ -42,8 +42,6 @@ def move(board, index, value)
   end
 
   def play(board)
-  counter = 0
-
   while !over?(board)
     turn(board)
   end
