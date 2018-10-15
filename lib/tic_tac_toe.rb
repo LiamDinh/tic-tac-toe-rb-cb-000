@@ -47,7 +47,7 @@ def move(board, index, value)
   while counter < 9 && !over?(board)
     turn(board)
     if won?(board)
-       return "Congratulations #{winner(board)}!"
+       puts ("Congratulations #{winner(board)}!")
     elsif draw?(board)
       puts "Cat's Game!"
     end
