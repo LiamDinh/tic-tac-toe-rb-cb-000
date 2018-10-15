@@ -44,14 +44,13 @@ def move(board, index, value)
   def play(board)
   counter = 0
 
-  while counter < 9 && !over?(board)
+  while !over?(board)
     turn(board)
     if won?(board)
        puts ("Congratulations #{winner(board)}!")
     elsif draw?(board)
       puts ("Cat's Game!")
     end
-    counter += 1
   end
 end
 
