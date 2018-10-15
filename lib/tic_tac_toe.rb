@@ -43,13 +43,15 @@ def move(board, index, value)
 
   def play(board)
   counter = 0
-  while counter < 9
-    turn(board)
-    counter += 1
-  end
-  puts "Please enter 1-9: "
-  index = gets.strip
 
+  while counter < 9 && !over?(board)
+    turn(board)
+    if won?(board)
+      puts "Congratulations #{winner(board)}"
+    elsif draw?(board)
+      puts "It has been a draw."
+    end
+    counter += 1
 end
 
   def current_player(board)
