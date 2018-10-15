@@ -49,7 +49,7 @@ def move(board, index, value)
     if won?(board)
       puts 'Congratulations #{winner(board)}!'
     elsif draw?(board)
-      puts "It has been a draw."
+      puts "Cat's Game!"
     end
     counter += 1
   end
