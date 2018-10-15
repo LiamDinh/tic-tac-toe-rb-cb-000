@@ -49,7 +49,7 @@ def move(board, index, value)
   end
   puts "Please enter 1-9: "
   index = gets.strip
-  
+
 end
 
   def current_player(board)
@@ -70,8 +70,6 @@ end
 
 def draw?(board)
    !(won?(board)) && full?(board)
-
-
 end
 
 # Define your WIN_COMBINATIONS constant
