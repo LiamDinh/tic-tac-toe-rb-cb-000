@@ -52,6 +52,7 @@ def move(board, index, value)
       puts "It has been a draw."
     end
     counter += 1
+  end
 end
 
   def current_player(board)
