@@ -15,7 +15,7 @@ def input_to_index(input)
   input.to_i - 1
   end
 
-def move(board, index, value = "X")
+def move(board, index, value)
   board[index] = value
   end
 
@@ -28,7 +28,7 @@ def move(board, index, value = "X")
   end
   counter
   end
-=begin
+
   def turn(board)
     puts "Please enter 1-9:"
     input = gets.strip
@@ -40,7 +40,7 @@ def move(board, index, value = "X")
       turn(board)
     end
   end
-=end
+
   def play(board)
   counter = 0
   while counter < 9
