@@ -12,11 +12,25 @@ def position_taken?(board, index)
 end
 
 def input_to_index(input)
-  input.to_i - 1 
+  input.to_i - 1
   end
-  
+
 def move(board, index, value = "X")
   board[index] = value
+  end
+
+  def turn_count(board)
+    counter = 0
+    board.each do |element|
+      if element == "X" || element =="O"
+        counter += 1
+      end
+  end
+  counter
+  end
+  
+  def current_player(board)
+    turn_count(board).even? ? "X" : "O"
   end
 
 def valid_move?(board, index)
