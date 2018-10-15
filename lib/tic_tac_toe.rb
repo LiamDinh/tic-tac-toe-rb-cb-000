@@ -47,6 +47,9 @@ def move(board, index, value)
     turn(board)
     counter += 1
   end
+  puts "Please enter 1-9: "
+  index = gets.strip
+  
 end
 
   def current_player(board)
